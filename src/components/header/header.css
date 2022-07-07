@@ -1,0 +1,117 @@
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.header {
+    padding-inline: 1 rem;
+    background-image:  linear-gradient(to right, #0E203D, #000);
+  }
+  .header > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.header__logo,
+.header__user {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.header__logo{
+    padding-left: 0.5rem;
+}
+
+.header__logo > img {
+    height: 5vmin;
+    width: 5vmin;
+  }
+  .header__logo > h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-light);
+}
+.header__user{
+  padding: 0.5em;
+  position: relative;
+  flex-direction: column;
+}
+.header__user:hover{
+    background-color: var(--color-hover);
+}
+.header__user .active{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+.header__user p{
+  color: var(--color-light);
+}
+.header__user .active p{
+  color: var(--color-dark);
+}
+
+.header__user img{
+  width: 4vmin;
+  border-radius: 15%;
+  border-color: var(--color-light);
+  border: 1px;
+}
+@media screen and (max-width: 800px) {
+  .header__user img {
+  width: 4vmax;
+  }
+  .header__logo > img{
+    height: 5vmax;
+    width: 5vmax;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .header > .container {
+    gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header__logo h1 {
+    display: none;
+    }
+}
+
+.dropdown{
+ position: relative;
+
+}
+  .dropdown-button {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-menu{
+    position: absolute;
+    background-color: var(--color-light);
+    padding: .75em;
+    box-shadow: 0  2px 15 px 0 rgba(0,0,0,0.1);
+    width: calc(100% - 1.5em);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .dropdown-menu li{
+    width: 100%;
+    padding: 2px;
+  }
+
+  .dropdown-link{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    font-size: 20px;
+  }

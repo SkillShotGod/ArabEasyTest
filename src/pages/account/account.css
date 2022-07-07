@@ -6,3 +6,46 @@
 	display: none;
 }
 
+body{
+    
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.btn--back
+{
+    margin: 0px;
+    font-size: 16px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.btn--back p{
+    margin: 0px;
+    padding-left: 0.25em;
+}
+.btn--primary{
+ background-color: #58C8EF;
+ color: white;
+}
+.btn--secondary{
+ color: #58C8EF;
+ font-weight:lighter;
+}
+.profile-container{
+    background-color: #707070;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+.profile-container input{
+    border-radius: 4px;
+    background-color: #112949;
+    border: 1px solid rgba(226,226,226,0.2);
+    padding: 0.2em 1em;
+    color: #F1F7F9;
+}
+.profile-container label{
+    display: block;
+    
+}

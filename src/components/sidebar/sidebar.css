@@ -1,0 +1,32 @@
+.sidebar{
+    background-image:  linear-gradient(to right, #0E203D, #132941);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: calc(100% - 6vh );
+    width: 4em;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-item{
+    padding: 1em;
+    height: fit-content;
+    width: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar{
+        background-image: none;
+        background-color: #000;
+        flex-direction: row;
+        left: auto;
+        bottom: 0;
+        height: 2.5em;
+        width: 100%;
+    }
+
+    .sidebar-item{
+        transform: scale(0.5);
+    }
+}

@@ -1,0 +1,41 @@
+.account-nav-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-nav-mobile h2{
+    font-weight: 100;
+    color: #F1F7F9;
+    padding: 0.2em;
+    margin: 0;
+}
+
+.account-nav-mobile-item{
+    
+    color: #F1F7F9;
+    background-color: #CFCFCF80;
+    margin: 0.2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn{
+    border-radius: 5px;
+    border: 0px;
+    padding: 0.5em 1em;
+    width: 8em;
+    margin: 1em;
+
+}
+.container{
+    margin: 1em;
+}
+.btn-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+
