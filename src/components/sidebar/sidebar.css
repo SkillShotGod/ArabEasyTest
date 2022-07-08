@@ -14,7 +14,9 @@
     height: fit-content;
     width: fit-content;
 }
-
+.grow-transition{
+    transition: all .5s ease-in-out
+}
 @media screen and (max-width: 800px) {
     .sidebar{
         background-image: none;
@@ -23,10 +25,15 @@
         left: auto;
         bottom: 0;
         height: 2.5em;
-        width: 100%;
+        width: 100vw;
     }
 
     .sidebar-item{
         transform: scale(0.5);
     }
 }
+.grow-transition:hover{
+    transform: scale(1.5);
+
+}
+

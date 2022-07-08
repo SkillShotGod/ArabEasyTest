@@ -9,7 +9,7 @@ const Sidebar = () => {
     <>
     <div className='sidebar'>
 
-        <li className='sidebar-item'><img src={assignmentNav} alt="icon"/></li>
+        <li className='sidebar-item grow-transition'><img src={assignmentNav} alt="icon"/></li>
         <li className='sidebar-item'><img src={messageSquare} alt="icon"/></li>
       
     </div>

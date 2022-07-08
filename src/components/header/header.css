@@ -39,7 +39,7 @@ li{
   position: relative;
   flex-direction: column;
 }
-.header__user:hover{
+.button:hover{
     background-color: var(--color-hover);
 }
 .header__user .active{
@@ -59,6 +59,10 @@ li{
   border-color: var(--color-light);
   border: 1px;
 }
+
+.avatar >img {
+  border: 1px solid rgba(226,226,226,0.5);
+}
 @media screen and (max-width: 800px) {
   .header__user img {
   width: 4vmax;
@@ -70,6 +74,9 @@ li{
 }
 
 @media screen and (max-width: 800px) {
+  .header{
+    width: 100%;
+  }
     .header > .container {
     gap: 3rem;
     }
@@ -93,15 +100,16 @@ li{
     outline: 0;
     display: flex;
     align-items: center;
+    
   }
   .dropdown-menu{
     position: absolute;
     background-color: var(--color-light);
     padding: .75em;
-    box-shadow: 0  2px 15 px 0 rgba(0,0,0,0.1);
-    width: calc(100% - 1.5em);
+    width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    z-index: 999;
   }
   .dropdown-menu li{
     width: 100%;

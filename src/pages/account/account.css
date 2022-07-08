@@ -1,6 +1,9 @@
 .hide{
     display: none;
 }
+.no-margin{
+    margin: 0;
+}
 
 .PhoneInputCountryIcon {
 	display: none;
@@ -13,6 +16,8 @@ body{
 }
 .btn--back
 {
+    background-color: #0F2644;
+    padding: 0.5em 1em;
     margin: 0px;
     font-size: 16px;
     display: flex;
@@ -33,19 +38,154 @@ body{
  color: #58C8EF;
  font-weight:lighter;
 }
+
+.profile-container input{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #112949;
+    border: 1px solid rgba(226,226,226,0.2);
+    padding: 0.5em;
+    color: #F1F7F9;
+} 
+ .profile-container label{
+    display: block;
+    color:#9CBDEB;
+    
+}
 .profile-container{
-    background-color: #707070;
+    background-color:  #091526;
     border-radius: 5px;
     margin: 0.5em;
+    height: fit-content;
+    width: 75%;
+    
+} 
+
+.profile-container > form {
+    display: flex;
+    flex-direction: column;
 }
-.profile-container input{
+.form-container{
+    display: flex;
+    justify-content: space-between;
+}
+form > h3{
+    padding: 1em;
+    margin: 0px;
+}
+
+.profile-information-box{
+    display:flex;
+    flex:3;
+}
+
+.btn{
+    border-radius: 5px;
+    border: 0px;
+    padding: 0.75em 2em;
+    width: 8em;
+    margin: 0.5em;
+    cursor: pointer;
+}
+.btn-container{
+    flex:1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 1em;
+}
+.image-container{
+    display: flex;
+    flex:1;
+    padding: 1em;
+    align-items: flex-end;
+}
+
+.btn-container, .information-box-one, .information-box-two{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    
+    
+}
+
+
+
+.information-box-one, .information-box-two{
+    justify-content: space-evenly;
+}
+
+
+.form-item{
+    padding: 0.5em;
+}
+.form-container select{
+    width: 100%;
     border-radius: 4px;
     background-color: #112949;
     border: 1px solid rgba(226,226,226,0.2);
-    padding: 0.2em 1em;
+    padding: 0.5em;
     color: #F1F7F9;
 }
-.profile-container label{
-    display: block;
-    
+
+.PhoneInput{
+    display: flex;
+    gap: 5px;
+
+}
+.PhoneInputCountry{
+    width: 30%;
+}
+.image-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3CC3F2;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    right: 1em;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 700px) {
+   
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        flex-direction: row;
+    }
+    .form-container{
+        flex-direction: column;
+    }
+    .profile-information-box{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .profile-container{
+        background-color: #455467;
+        display: flex;
+        width: calc(100vw - 1em) ;
+    }
+    .information-box-two{
+        padding-top: 0;
+    }
+    .information-box-one{
+        padding-bottom: 0;
+    }
+
+    .PhoneInputInput{
+        width: 60%;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+    .profile-information-box label{
+        margin-bottom: 0.5em;
+    }
 }

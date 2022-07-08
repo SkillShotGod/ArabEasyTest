@@ -1,13 +1,29 @@
+@import url('http://fonts.cdnfonts.com/css/louis-george-cafe');
+*{
+  box-sizing: border-box;
+}
 :root{
+  
   --color-dark: #132941;
   --color-light: #F1F7F9;
   --color-hover: #3C4043;
+  font-family: 'Louis George Café', sans-serif;
 }
 
 body{
-  background-color: #000;
+  background-color: #0F2644;
   opacity: 0.99;
   background-image: url(./assets/images/ai-operating-system-on-a-dark-blue-background-vector.png);
   background-size: cover;
   color: white;
 }
+@media screen and (min-width: 800px) {
+  .body{
+    background-color: #000;
+  }
+  .hero-container{
+    position:absolute;
+    left: 15vh
+  }
+}
+

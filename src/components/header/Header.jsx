@@ -5,6 +5,7 @@ import Dropdown from './Dropdown'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+
 //A header component since it will be available on every page
 const Header = () => {
     const [title,setTitle]= useState("ArabEasy")

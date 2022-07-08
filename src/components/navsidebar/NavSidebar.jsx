@@ -33,10 +33,10 @@ const NavSidebar = (  ) => {
       }
       return(<>
       <div className='account-nav-sidebar'>
-        <ul>
+        <ul className='nav-sidebar-container'>
           
           <li className='account-nav-item' id="profileInformation" onClick={changeElement}>Profile Information</li>
-          <li className='account-nav-item' id="changePassword" onClick={changeElement}>changePassword</li>
+          <li className='account-nav-item' id="changePassword" onClick={changeElement}>Change Password</li>
         </ul>
         {currentElement==="profileInformation" && <ProfileInformation />}
         {currentElement==="changePassword" && <ChangePassword />}

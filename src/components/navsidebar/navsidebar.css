@@ -20,22 +20,29 @@
     color: white;
 }
 
-.btn{
-    border-radius: 5px;
-    border: 0px;
-    padding: 0.5em 1em;
-    width: 8em;
-    margin: 1em;
-
-}
-.container{
-    margin: 1em;
-}
-.btn-container{
-    display:flex;
-    justify-content: space-between;
-}
 
 
+
+.account-nav-sidebar{
+    display: flex;
+    position: absolute;
+    left: 4vh;
+    width: calc(100% - 4vh);
+    height: calc(100% - 8vh);
+    justify-content: flex-start;
+}
+.nav-sidebar-conatiner{
+    display: flex;
+    height: 100%;
+}
+.account-nav-item{
+    padding:0.5em 25em 0.5em 0.5em;
+    background-color: #091526;
+    margin-top: 0.2em;
+    cursor: pointer;
+}
+.account-nav-item:hover{
+ background-color: #CFCFCF80;
+}
 
 

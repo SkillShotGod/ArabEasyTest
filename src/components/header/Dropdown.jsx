@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
-
+import mockImage from "../../assets/images/mockImage.png"
 
 const Dropdown = () => {
     const [open,setOpen]=useState(false)
@@ -21,9 +21,9 @@ return (
     <div className="header__user">
     <div className="dropdown">
     <button  className={ open ? "dropdown-button active" : "dropdown-button"} onClick={() => setOpen(!open)}>
-        <p>Hi {user.firstName} , </p>
+        <p>Hi {user.firstName}, </p>
         <div className="avatar avatar--medium">
-                <img src={user.imageSmall}  alt="displayIMG" />
+                <img src={mockImage}  alt="displayIMG" />
             </div> 
     </button>
 

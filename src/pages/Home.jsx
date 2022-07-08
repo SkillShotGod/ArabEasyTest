@@ -11,7 +11,9 @@ const Home = () => {
     
 },[])
 return (
-    <div>Click on Profile Nav above and click on Account</div>
+    <div className="hero-container">
+      <h2>Click on Profile Nav above and click on Account</h2>
+    </div>
   )
 }
 
