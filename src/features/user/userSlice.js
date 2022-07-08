@@ -32,6 +32,10 @@ export const getUser = createAsyncThunk ('user/get', async(user, thunkAPI)=>{
     }
 })
 
+export const logout = createAsyncThunk('user/logout', async ()=>{
+    await userService.logout()
+})
+
 //creating the slice for reducers and extrareducers, basic redux toolkit
 export const userSlice = createSlice({
     name: 'user',
@@ -50,6 +54,9 @@ export const userSlice = createSlice({
         })
         .addCase(getUser.rejected, (state)=>{
             state.returnedError = true
+        })
+        .addCase(logout.fulfilled, (state)=>{
+            state.user = null
         })
     }
 })

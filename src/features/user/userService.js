@@ -24,9 +24,12 @@ const getUser = async () =>{
 }
 }
 
+const logout = () => localStorage.removeItem('user')
+
 
 const userService ={
     getUser,
+    logout,
 }
 
 export default userService

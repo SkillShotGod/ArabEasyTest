@@ -2,17 +2,22 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import mockImage from "../../assets/images/mockImage.png"
+import { useDispatch } from 'react-redux'
+import { logout } from '../../features/user/userSlice'
 
 const Dropdown = () => {
     const [open,setOpen]=useState(false)
     const {user} = useSelector((state)=>state.user)
-
+    const dispatch = useDispatch()
+    
     const DropdownList =() =>{
         return(
             <>
             <div className='dropdown-menu'>
             <li><Link to="/account" className={open ? 'dropdown-link active' : 'dropdown-link'}>Account</Link></li>
-            <li><Link to="/" className={open ? 'dropdown-link active' : 'dropdown-link' }>Logout</Link></li>
+            <li><Link to="/" onClick={()=>{
+                dispatch(logout())
+            }} className={open ? 'dropdown-link active' : 'dropdown-link' }>Logout</Link></li>
             </div>
             </>
         )
