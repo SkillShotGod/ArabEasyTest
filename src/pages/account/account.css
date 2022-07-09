@@ -76,6 +76,7 @@ form > h3{
 
 .profile-information-box{
     display:flex;
+    flex-direction: column;
     flex:3;
 }
 
@@ -92,6 +93,7 @@ form > h3{
     justify-content: flex-end;
     align-items: flex-end;
     margin-bottom: 1em;
+    flex-direction: column;
 }
 .image-container{
     display: flex;
@@ -100,14 +102,20 @@ form > h3{
     align-items: flex-end;
 }
 
-.btn-container, .information-box-one, .information-box-two{
+.btn-container, .information-box--one, .information-box--three{
     display: flex;
-    flex-direction: column;
     padding: 1em;
     
     
 }
+.information-box--two{
+    display: flex;
+    padding: 1em;
+}
 
+.form-item{
+    width: 100%;
+}
 
 
 .information-box-one, .information-box-two{
@@ -187,5 +195,13 @@ form > h3{
     }
     .profile-information-box label{
         margin-bottom: 0.5em;
+    }
+    .information-box--one, .information-box--two , .information-box--three{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .form-item{
+        padding:0.25em 0.5em;
     }
 }
