@@ -10,3 +10,8 @@ There is a small folder of shared components that are basically the atom sized e
 The sidebar is fixed on the left as per how the design looked.
 there is a userSlice and userService file in features/user that is supposed to handle all async logic to setup our redux store and manipulate it, trying to emulate an app which would have said functionality available.
 
+
+
+
+
+REMEMBER TO USE THE LOGOUT BUTTON WHEN YOU ARE DONE TO REMOVE THE USER VARIABLE FROM YOUR LOCAL STORAGE.
